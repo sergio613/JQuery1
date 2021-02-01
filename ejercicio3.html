@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Ejercicio 3</title>
+
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $("#azul").click(function(evento){
+                $("p").css("background-color","blue");
+                $("#verde").prop("checked", false);
+                $("#rojo").prop("checked", false);
+            });
+            $("#verde").click(function(evento){
+                $("p").css("background-color","green");
+                $("#azul").prop("checked", false);
+                $("#rojo").prop("checked", false);
+            });
+            $("#rojo").click(function(evento){
+                $("p").css("background-color","red");
+                $("#verde").prop("checked", false);
+                $("#azul").prop("checked", false);
+            });
+        });
+    </script>
+
+    <p>Este parrafo cambiara de color según el color seleccionado</p>
+    <input type="radio" id="azul" value="1">Color Azul</button>
+    </br>
+    <input type="radio" id="verde" value="2">Color Verde</button>
+    </br>
+    <input type="radio" id="rojo" value="3">Color Rojo</button>
+    </br>
+
+
+</body>
+</html>
